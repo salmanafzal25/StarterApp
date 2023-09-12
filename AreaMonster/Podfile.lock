@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.11)
+  - SkeletonView (1.30.4)
+  - UBottomSheet (1.0.10)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SkeletonView
+  - UBottomSheet
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SkeletonView
+    - UBottomSheet
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  UBottomSheet: a40ddcad489bb6d5f6171ffa96f161e558fcfaf0
+
+PODFILE CHECKSUM: e05aa69f7ed9706d297d621bab3a04ffca055d7d
+
+COCOAPODS: 1.12.1

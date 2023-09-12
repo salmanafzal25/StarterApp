@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ServicesMainCell" customModule="AreaMonster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="202"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esx-iV-5I2" customClass="RoundedView" customModule="AreaMonster" customModuleProvider="target">
+                        <rect key="frame" x="15" y="15" width="177" height="172"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tx8-IN-MaG">
+                                <rect key="frame" x="10" y="30.333333333333336" width="157" height="111.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-WB-dn6">
+                                        <rect key="frame" x="34.333333333333336" y="0.0" width="88.333333333333314" height="88.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X6T-WB-dn6" secondAttribute="height" multiplier="1:1" id="i9q-7R-Thf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA8-21-P2W" customClass="TextRegular13Black" customModule="AWQAF_UAE" customModuleProvider="target">
+                                        <rect key="frame" x="68" y="93.333333333333314" width="21" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tx8-IN-MaG" firstAttribute="leading" secondItem="esx-iV-5I2" secondAttribute="leading" constant="10" id="3TB-Og-rvv"/>
+                            <constraint firstAttribute="trailing" secondItem="Tx8-IN-MaG" secondAttribute="trailing" constant="10" id="GvB-yC-4Kw"/>
+                            <constraint firstItem="X6T-WB-dn6" firstAttribute="width" secondItem="esx-iV-5I2" secondAttribute="width" multiplier="0.5" id="Pa1-wZ-zv7"/>
+                            <constraint firstItem="Tx8-IN-MaG" firstAttribute="centerY" secondItem="esx-iV-5I2" secondAttribute="centerY" id="UF5-iv-F3e"/>
+                            <constraint firstItem="Tx8-IN-MaG" firstAttribute="centerX" secondItem="esx-iV-5I2" secondAttribute="centerX" id="pDg-wM-SHv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="esx-iV-5I2" secondAttribute="bottom" constant="15" id="0KX-8a-Dyv"/>
+                <constraint firstAttribute="trailing" secondItem="esx-iV-5I2" secondAttribute="trailing" constant="15" id="KPc-fe-nwK"/>
+                <constraint firstItem="esx-iV-5I2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="L4m-i2-gFx"/>
+                <constraint firstItem="esx-iV-5I2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="hia-Tf-R1K"/>
+            </constraints>
+            <size key="customSize" width="207" height="202"/>
+            <connections>
+                <outlet property="containerView" destination="esx-iV-5I2" id="BRY-GT-cuy"/>
+                <outlet property="imageService" destination="X6T-WB-dn6" id="Sf4-oI-gGd"/>
+                <outlet property="lblService" destination="XA8-21-P2W" id="hdW-fC-qwl"/>
+            </connections>
+            <point key="canvasLocation" x="87.786259541984734" y="52.112676056338032"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="17" height="28"/>
+    </resources>
+</document>
